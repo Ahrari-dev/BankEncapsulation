@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace BankEncapsulation
 {
-    internal class BankAccount
+    private class BankAccount
+    public void Deposit(double depositAmount)
     {
+        balance += depositAmount;
+    }
+    public void Withdraw(double amount)
+    {
+        balance -= amount;
     }
 }
